@@ -2,6 +2,10 @@ name: Build
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
+permissions:
+ contents: write
+ pages: write
+ id-token: write
 on:
   pull_request:
     branches: [ main ]
